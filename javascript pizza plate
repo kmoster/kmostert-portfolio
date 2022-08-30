@@ -1,0 +1,44 @@
+background(186, 145, 20); // wooden table
+ellipse(200, 200, 350, 350); // plate
+ellipse(200, 200, 300, 300); 
+
+//pizza
+fill (240, 227, 84);
+noStroke();
+triangle (311, 300, 200, 50, 85,300);
+stroke(92, 73, 73);
+strokeWeight(35);
+arc (200, 293, 226, 50, 22, 180);
+
+//pepperoni
+noStroke();
+fill (255, 8, 8);
+ellipse (200,119, 45,45);
+fill (255, 0, 0);
+ellipse (169, 190, 45, 45);
+fill (255, 0, 0);
+ellipse (240, 229, 45, 45);
+fill (255, 0, 0);
+ellipse (185, 266, 45, 45);
+
+//sausage
+fill(69, 53, 53);
+rect (125,243, 20,20);
+fill(69, 53, 53);
+rect (229,171, 20,20);
+fill(69, 53, 53);
+rect (238,256, 20,20);
+fill(69, 53, 53);
+rect (174,141, 20,20);
+fill(69, 53, 53);
+rect (183,214, 20,20);
+
+//olives
+stroke(18, 17, 17);
+noFill();
+strokeWeight (10);
+ellipse (187,200,25,25);
+ellipse (160,259,25,25);
+ellipse (269,256,25,25);
+ellipse (220,242,25,25);
+ellipse (209,144,25,25);
