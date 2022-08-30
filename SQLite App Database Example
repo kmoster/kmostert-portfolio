@@ -1,0 +1,41 @@
+CREATE TABLE Daily_Log
+    (id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT,
+    exerciseminutes INTEGER,
+    exercisetype TEXT,
+    caloriesburnt INTEGER);
+    
+INSERT INTO Daily_Log (date, exerciseminutes, exercisetype, caloriesburnt)
+    VALUES ("5/7/22", 27, "running", 137);    
+INSERT INTO Daily_Log (date, exerciseminutes, exercisetype, caloriesburnt)
+    VALUES ("5/8/22", 53, "dancing", 225);
+INSERT INTO Daily_Log (date, exerciseminutes, exercisetype, caloriesburnt)
+    VALUES ("5/9/22", 10, "yoga", 50);
+INSERT INTO Daily_Log (date, exerciseminutes, exercisetype, caloriesburnt)
+    VALUES ("5/9/22", 20, "running", 120);
+INSERT INTO Daily_Log (date, exerciseminutes, exercisetype, caloriesburnt)
+    VALUES ("5/10/22", 22, "running", 120);
+INSERT INTO Daily_Log (date, exerciseminutes, exercisetype, caloriesburnt)
+    VALUES ("5/11/22", 55, "dancing", 230);
+INSERT INTO Daily_Log (date, exerciseminutes, exercisetype, caloriesburnt)
+    VALUES ("5/12/22", 25, "dancing", 140);
+    
+SELECT*FROM Daily_Log;
+
+UPDATE Daily_Log SET "exercisetype"="running" WHERE id=7;
+
+SELECT*FROM Daily_Log;
+
+
+ALTER TABLE Daily_Log ADD "calorieseaten" INTEGER 
+    DEFAULT "none";
+    
+SELECT*FROM Daily_Log;
+
+UPDATE Daily_Log SET "calorieseaten" = 1800 WHERE "exercisetype" = "running";
+
+SELECT*FROM Daily_Log;
+
+DELETE FROM Daily_Log WHERE id=3;
+
+SELECT*FROM Daily_Log;
